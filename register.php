@@ -4,16 +4,12 @@
     // Include database connection file
     include 'connect.php';
 
-    // Enable error reporting for debugging
-    error_reporting(E_ALL);
-    ini_set('display_errors', 1);
-
     // Check if the connection was successful
     if ($con->connect_error) {
-        die("Connection failed: " . $con->connect_error);
+        echo "Connection failed: " . $con->connect_error;
     }
 
-    if (isset($_POST['signUp'])) {
+    if (isset($_POST['signup'])) {
         $firstname = $_POST['fName'];
         $lastname = $_POST['lName'];
         $email = $_POST['email'];
@@ -40,7 +36,7 @@
         }
     }
 
-    if (isset($_POST['signIn'])) {
+    if (isset($_POST['signin'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
         $password = md5($password);
