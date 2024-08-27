@@ -11,9 +11,9 @@
     />
   </head>
   <body>
-    <div class="container" id="signup">
+    <div class="container" id="signup" style="display: none">
       <h1 class="form-title">Register</h1>
-      <form method="post" action="">
+      <form method="post" action="register.php">
         <div class="input-group">
           <i class="fas fa-user"></i>
           <input
@@ -59,7 +59,7 @@
           />
           <label for="Password">Password</label>
         </div>
-        <input type="submit" class="btn" value="Sign Up" name="signUp" />
+        <input type="submit" class="btn" value="Sign Up" name="signup" />
       </form>
       <p class="or">----------or----------</p>
       <div class="icons">
@@ -74,7 +74,7 @@
 
     <div class="container" id="signin">
       <h1 class="form-title">Sign In</h1>
-      <form method="post" action="">
+      <form method="post" action="register.php">
         <div class="input-group">
           <i class="fas fa-envelope"></i>
           <input
@@ -100,7 +100,7 @@
         <p class="recover">
           <a href="#">Recover Passoword</a>
         </p>
-        <input type="submit" class="btn" value="Sign In" name="signIn" />
+        <input type="submit" class="btn" value="Sign In" name="signin" />
       </form>
       <p class="or">----------or----------</p>
       <div class="icons">
@@ -112,5 +112,6 @@
         <button id="signUpButton">Sign Up</button>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
